@@ -1,0 +1,19 @@
+---
+
+galaxy_info:
+
+  author: igor.mukhin@gmail.com
+
+  description: Install Sublime Text 3 Package Control and configure packages list
+
+  min_ansible_version: 1.4
+
+  license: MIT
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+
+  categories:
+    - development

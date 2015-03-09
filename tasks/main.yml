@@ -1,0 +1,22 @@
+---
+
+# @see http://stackoverflow.com/questions/19529999/add-package-control-in-sublime-text-3-through-the-command-line
+
+- name: Sublime Text 3 | Package Control | Download
+  get_url: 
+    url: https://sublime.wbond.net/Package%20Control.sublime-package
+    dest: "~/.config/sublime-text-3/Installed Packages/Package Control.sublime-package"
+
+- name: Sublime Text 3 | Package Control | Set owner and rights
+  file:
+    state: file
+    path: "~/.config/sublime-text-3/Installed Packages/Package Control.sublime-package"
+    mode: 0666
+    owner: "{{ packagecontrol_owner }}"
+    group: "{{ packagecontrol_group }}"
+
+- name: Sublime Text 3 | Package Control | Generate 'Package Control.sublime-settings'
+  template:
+    src: "Package Control.sublime-settings.js2"
+    dest: "~/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+    backup: "{{ packagecontrol_backup }}"

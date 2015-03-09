@@ -1,0 +1,11 @@
+---
+
+packagecontrol_owner: www-data
+packagecontrol_group: www-data
+
+packagecontrol_backup: yes
+
+packagecontrol_packages: []
+  # - "AutoFileName"
+  # - "BracketHighlighter"
+  # - "Terminal"
