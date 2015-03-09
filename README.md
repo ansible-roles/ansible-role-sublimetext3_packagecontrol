@@ -4,7 +4,7 @@ Ansible role to install Sublime Text 3 [Package Control](https://packagecontrol.
 
 ## Prerequisites
 
-You must install sublimetext3 before.
+You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) before.
 
 ## Example Playbook
 
