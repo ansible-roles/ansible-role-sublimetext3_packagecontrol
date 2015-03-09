@@ -13,7 +13,7 @@ You must install sublimetext3 before.
   vars:
     packagecontrol_owner: some-user
 	packagecontrol_group: www-data
-    packagecontrol_backup: true
+
     packagecontrol_packages:
       - "AutoFileName"
 	  - "GitGutter"
