@@ -11,16 +11,18 @@ You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) bef
 ```yml
 
   vars:
-    packagecontrol_owner: some-user
-	packagecontrol_group: www-data
-
+    # --- Defaults (Welcome to override!) ---
+    packagecontrol_url: "https://packagecontrol.io/Package Control.sublime-package"
+    packagecontrol_owner: "{{ ansible_ssh_user }}"
+    packagecontrol_group: "{{ ansible_ssh_user }}"
+    packagecontrol_backup: yes
+    # --- Settings (Need to override!) ---
     packagecontrol_packages:
-      - "AutoFileName"
-	  - "GitGutter"
-	  - "Symfony2 Snippets"
-	  - "Twig"
-      - "Terminal"
-
+     - "AutoFileName"
+     - "GitGutter"
+     - "Symfony2 Snippets"
+     - "Twig"
+     - "Terminal"
   roles:
     - { role: igor_mukhin.sublimetext3_packagecontrol, tags: sublimetext3 }
 
