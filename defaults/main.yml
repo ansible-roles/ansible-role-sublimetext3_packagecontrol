@@ -1,7 +1,7 @@
 ---
 
-packagecontrol_owner: www-data
-packagecontrol_group: www-data
+packagecontrol_owner: "{{ ansible_ssh_user }}"
+packagecontrol_group: "{{ ansible_ssh_user }}"
 
 packagecontrol_backup: yes
 
