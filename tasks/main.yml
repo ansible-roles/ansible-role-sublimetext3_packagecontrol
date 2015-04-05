@@ -4,8 +4,8 @@
 
 - name: Sublime Text 3 | Package Control | Download
   get_url: 
-    url: https://sublime.wbond.net/Package%20Control.sublime-package
-    dest: "~/.config/sublime-text-3/Installed Packages/Package Control.sublime-package"
+    url: "{{ packagecontrol_url }}"
+    dest: "~/.config/sublime-text-3/Installed Packages"
 
 - name: Sublime Text 3 | Package Control | Set owner and rights
   file:

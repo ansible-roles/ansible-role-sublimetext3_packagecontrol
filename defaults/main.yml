@@ -1,10 +1,12 @@
 ---
 
+# --- Defaults (Welcome to override!) ---
+packagecontrol_url: "https://packagecontrol.io/Package Control.sublime-package"
 packagecontrol_owner: "{{ ansible_ssh_user }}"
 packagecontrol_group: "{{ ansible_ssh_user }}"
-
 packagecontrol_backup: yes
 
+# --- Settings (Need to override!) ---
 packagecontrol_packages: []
   # - "AutoFileName"
   # - "BracketHighlighter"
