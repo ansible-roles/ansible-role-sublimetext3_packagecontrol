@@ -1,0 +1,4 @@
+---
+- src: jdauphant.sublimetext
+  version: v1.2
+  path: ./tests/roles/
