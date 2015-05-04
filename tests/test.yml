@@ -2,6 +2,7 @@
   roles:
     - name: Ensure Sublime Text 3
       role: jdauphant.sublimetext
+      sudo: Yes
     - name: Ensure Package Control
       role: ../../ansible-role-sublimetext3_packagecontrol
       packagecontrol_packages:
