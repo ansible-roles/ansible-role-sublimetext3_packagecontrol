@@ -8,4 +8,4 @@ install:
   - pip install ansible==1.8.4
 script:
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check --list-tasks
-  - ansible-playbook tests/test.yml -i tests/inventory --connection=local -vvvv
+  - ansible-playbook tests/test.yml -i tests/inventory -vvvv
