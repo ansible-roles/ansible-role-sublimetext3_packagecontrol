@@ -21,11 +21,11 @@ You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) bef
     packagecontrol_backup: yes
     # --- Settings (Need to override!) ---
     packagecontrol_packages:
-     - "AutoFileName"
-     - "GitGutter"
-     - "Symfony2 Snippets"
-     - "Twig"
-     - "Terminal"
+      - "AutoFileName"
+      - "GitGutter"
+      - "Symfony2 Snippets"
+      - "Twig"
+      - "Terminal"
   roles:
     - { role: igor_mukhin.sublimetext3_packagecontrol, tags: sublimetext3 }
 
