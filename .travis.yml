@@ -7,6 +7,5 @@ before_install:
 install:
   - pip install ansible==1.8.4
 script:
-  - ansible-galaxy install -r tests/requirements.yml
-  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check --list-tasks 
+  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check --list-tasks
   - ansible-playbook tests/test.yml -i tests/inventory --connection=local -vvvv
