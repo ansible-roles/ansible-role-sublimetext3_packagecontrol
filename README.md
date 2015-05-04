@@ -15,7 +15,7 @@ You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) bef
     # --- Defaults (Welcome to override!) ---
     packagecontrol_url: "https://packagecontrol.io/Package Control.sublime-package"
     packagecontrol_dir_bin: "~/.config/sublime-text-3/Installed Packages"
-    packagecontrol_dir_cfg: "~/.config/sublime-text-3/Packages/User"    
+    packagecontrol_dir_cfg: "~/.config/sublime-text-3/Packages/User"
     packagecontrol_owner: "{{ ansible_ssh_user }}"
     packagecontrol_group: "{{ ansible_ssh_user }}"
     packagecontrol_backup: yes
@@ -29,6 +29,12 @@ You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) bef
   roles:
     - { role: igor_mukhin.sublimetext3_packagecontrol, tags: sublimetext3 }
 
+```
+
+## Testing
+
+```bash
+cd tests && vagrant up
 ```
 
 ## License
