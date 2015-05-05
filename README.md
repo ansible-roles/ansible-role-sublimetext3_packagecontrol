@@ -37,6 +37,10 @@ You must [install sublimetext3](https://galaxy.ansible.com/list#/roles/3070) bef
 cd tests && vagrant up
 ```
 
+## Special thanks to contributors
+
+* [cmprescott](https://github.com/cmprescott)
+
 ## License
 
 MIT
