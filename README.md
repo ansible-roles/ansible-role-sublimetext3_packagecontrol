@@ -1,5 +1,5 @@
 # ansible-role-sublimetext3_packagecontrol
-[![Build Status](https://travis-ci.org/cmprescott/ansible-role-sublimetext3_packagecontrol.svg?branch=feature/IntegrationTest)](https://travis-ci.org/cmprescott/ansible-role-sublimetext3_packagecontrol)
+[![Build Status](https://travis-ci.org/ansible-roles/ansible-role-sublimetext3_packagecontrol.svg?branch=master)](https://travis-ci.org/ansible-roles/ansible-role-sublimetext3_packagecontrol)
 
 Ansible role to install Sublime Text 3 [Package Control](https://packagecontrol.io/) and configure packages list.
 
